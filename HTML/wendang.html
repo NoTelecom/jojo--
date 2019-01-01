@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{margin: 0;
+        padding:0;
+        list-style:none;
+        text-decoration: none;
+        z-index: 100;
+    }
+    a{color: black;}
+    h2 a{color: #fff;}
+    h2 a:link,a:visited{
+        color: white;
+        text-decoration: none;}
+    .menu-list a:link,.menu-list a:visited{
+        text-decoration: none;}
+    li a:hover{color: #094a8f}
+    html,body,.parent{
+        margin:0;
+        height:100%;
+        overflow:hidden;
+    }
+    body{ color:white; }
+    .top{
+        padding-top: 1%;
+        padding-left: 4%;
+        position:absolute;
+        top:0;
+        left:200px;
+        right:0;
+        height:100px;
+    }
+    .top button{margin-right: 3%;
+        width: 100px;
+    }
+    .left{
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:50px;
+        width:200px;
+
+        opacity: 0.7;
+    }
+    .right{
+        position:absolute;
+        left:200px;
+        top:100px;
+        bottom:0px;
+        right:0;
+        background-color: #eff0f3;
+        overflow: auto;
+    }
+    .right .inner{  min-height: 1000px; }
+
+    .left-header{
+        padding-left: 4%;
+        padding-top: 10%;
+        height: 20%;
+        width:100%;
+        background-color:#02132B ;
+    }
+    #logo{width: 20%;
+        height: 40%}
+    .cloud{
+        position: relative;
+        top: -40%;
+        left: 25%;
+
+    }
+    #inputHelpBlock{
+        position: relative;
+        margin-top: -20%;
+        margin-left: -3%;
+    }
+    .left-container{
+        color: black;
+
+        height: 80%;
+        width:100%;
+    }
+    .menu-item li{
+        height: 70px;
+        width: 100%;
+    }
+    .menu-item li p{
+        height: 30px;
+        color: black;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+    }
+    .menu-item li p:hover{color: #094a8f}</style>
+    <title>weicloud homepage</title>
+</head>
+<body>
+<div class="parent">
+    <div class="top">
+
+        <button type="button" class="btn btn-primary btn-lg"> 上 传 </button>
+        <button type="button" class="btn btn-default btn-lg"> 新 建 </button>
+    </div>
+    <div class="left">
+        <div class="left-header">
+            <img id="logo" src="图片区/云.png" >
+            <div class="cloud"><h2><a href="" title="weicloud">WeiCloud</a></h2></div>
+            <label class="sr-only" for="inputHelpBlock">Input with help text</label>
+            <input type="text" id="inputHelpBlock" class="form-control" placeholder="搜索全部" aria-describedby="helpBlock">
+        </div>
+        <div class="left-container">
+            <div class="menu-item">
+                <div class="menu-item-bd">
+                    <ul class="menu-list">
+                        <li class="cur"><a href="">
+                            <i class="icon icon-all"></i>
+                            <p class="bg-primary">全部</p>
+
+                        </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-doc"></i>
+                                <p class="bg-success">文档</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-pic"></i>
+                                <p class="bg-info">图片</p>
+                            </a>
+                        </li>
+                        <li class="cur"><a href="">
+                            <i class="icon icon-all"></i>
+                            <p class="bg-primary">最近</p>
+
+                        </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-doc"></i>
+                                <p class="bg-success">视频</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-pic"></i>
+                                <p class="bg-info">音乐</p>
+                            </a>
+                        </li>
+                        <li class="cur"><a href="">
+                            <i class="icon icon-all"></i>
+                            <p class="bg-primary">照片</p>
+
+                        </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-doc"></i>
+                                <p class="bg-success">笔记</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon icon-pic"></i>
+                                <p class="bg-info">回收站</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="inner">
+            <div class="inner-top">
+                <button type="button" class="btn btn-default">全部</button>
+                <button type="button" class="btn btn-default">DOC</button>
+                <button type="button" class="btn btn-default">XLS</button>
+                <button type="button" class="btn btn-default">PPT</button>
+                <button type="button" class="btn btn-default">PDF</button>
+
+            </div>
+        </div></div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="weicloudHomepage.js"></script>
+
+</body>
+</html>
